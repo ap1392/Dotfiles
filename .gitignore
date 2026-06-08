@@ -1,0 +1,9 @@
+# OS cruft
+.DS_Store
+
+# Never commit secrets, even if a future dotfile drops them here
+*.pem
+*.key
+.env
+.env.*
+*credentials*
