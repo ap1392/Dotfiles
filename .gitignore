@@ -7,3 +7,13 @@
 .env
 .env.*
 *credentials*
+
+# Never commit Hex runtime data or private content.
+hex/history.json
+hex/logs/
+hex/models/
+hex/updates/
+hex/local-api.json
+hex/*.lock
+hex/onboarding-*
+hex/update-bucket

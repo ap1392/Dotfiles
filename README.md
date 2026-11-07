@@ -25,3 +25,19 @@ ln -s ~/dotfiles/claude/skills        ~/.claude/skills
 ```
 
 (If a real file already exists at one of those paths, move it aside first.)
+
+## Hex
+
+`hex/settings.json` is a snapshot of Hex's preferences. It intentionally excludes
+dictation history, logs, downloaded models, recordings, updates, lock files, and
+the owner-only local API credentials.
+
+To restore it on macOS:
+
+1. Quit Hex.
+2. Back up the existing `~/Library/Application Support/hex/settings.json`.
+3. Copy `hex/settings.json` to that location.
+4. Start Hex again.
+
+The snapshot includes shortcut, transcription-model, audio, UI, Labs, meeting,
+capture, and update preferences.
